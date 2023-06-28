@@ -1,0 +1,11 @@
+@use  "../global" as global;
+
+.l-footer {
+    background-image: url(../img/bg3@2x.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.l-footer__inner {
+    padding-top: 64px;
+}

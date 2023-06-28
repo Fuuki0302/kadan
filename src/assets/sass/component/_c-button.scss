@@ -1,0 +1,20 @@
+@use  "../global" as global;
+
+
+.c-contact__btn {
+    display: inline-block;
+    color: #3e3e3e;
+    border: 1px solid #3e3e3e;
+    padding: 20px 44px;
+    font-size: 16px;
+    font-family: global.$font-ja;
+    font-weight: 500;
+
+    &:hover {
+    color: #fff;
+    background: #000;
+    transition: all 0.3s ease;
+    }
+
+
+}

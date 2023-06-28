@@ -1,0 +1,56 @@
+
+/* Modal
+
+====================================================*/
+@use  "../global" as global;
+
+.p-modal__overlay {
+    background: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+
+.p-modal__content{
+    position: relative;
+
+}
+
+.p-modal___ttl--wrap{
+    position: relative;
+
+}
+
+.p-modal__ttl{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 430px;
+    width: 90%;
+    border-bottom: 1px solid #F6F6F6;
+    font-family: global.$font-ja;
+}
+
+.p-modal__close{
+    cursor: pointer;
+
+    img {
+      width: 18px;
+      height: 18px;
+    }
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    
+}
+
+
+
+.p-modal__button{
+    text-align: center;
+    margin-top: 50px;
+}

@@ -1,0 +1,161 @@
+@use  "../global" as global;
+
+
+.p-onsen-top__ttl{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 34px;
+    font-weight: 800;
+    color: #fff;
+    font-family: global.$font-ja;
+
+}
+
+.p-onsen-body__content {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.p-onsen__body--ttl {
+    font-family: global.$font-ja;
+}
+
+.p-onsen__img{
+    img {
+        @include global.mq('sp') {
+            width: 100%;
+        }
+
+        @include global.mq('sp-down') {
+            width: 100%;
+        }
+        }
+
+}
+
+
+.p-flex__row{
+    flex-direction: row-reverse;
+
+    @include global.mq('sp') {
+        display: block;
+        position: static;
+    }
+    @include global.mq('sp-down') {
+        display: block;
+        position: static;
+    }
+}
+
+.p-flex__row--content{
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-size: cover;
+    font-weight: 500;
+    position: absolute;
+    top: 60px;
+    right: 360px;
+    padding-left: 50px;
+    padding-right: 300px;
+    flex: 1;
+    padding-bottom: 50px;
+    font-family: global.$font-ja;
+    z-index: -1;
+
+
+        @include global.mq('tab') {
+        right: 186px;
+        top: 235px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        }
+
+        @include global.mq('sp') {
+        position: static;
+        padding: 13px;
+        }
+        @include global.mq('sp-down') {
+        position: static;
+        padding: 13px;
+        }
+
+}
+
+
+.p-onsen-wrapper{
+    max-width: 1180px;
+    margin: 200px auto 60px; 
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+
+    @include global.mq('tab') {
+        margin: 300px auto 0 ; 
+    }
+    @include global.mq('sp-down') {
+        margin: 120px auto 0 ; 
+    }
+
+}
+.p-onsen__ttl {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 30px;
+    font-family: global.$font-ja;
+    
+}
+
+.p-onsen__content {
+    width: 90%;
+    margin: 50px auto;
+    padding-bottom: 90px;
+    overflow: hidden;
+}
+
+.p-onsen__flex {
+    display: flex;
+    padding: 17px 0px;
+    border-top: 1px solid #e7e7e7;
+    overflow: hidden;
+
+    &:last-child {
+        border-bottom: 1px solid #e7e7e7;
+    }
+
+}
+.p-flex__item {
+    & + & {
+        @include global.mq('pc') {
+            margin-top: 84px;
+        }
+        @include global.mq('tab') {
+            margin-top: 84px;
+        }
+    }
+}
+
+.p-onsen-inner{
+    margin: 0 auto;
+
+}
+
+.p-onsen__flex--ttl{
+    font-size: 15px;
+    font-weight: 500;
+    width: 25%;
+    font-family: global.$font-ja;
+
+}
+
+
+.p-onsen__flex--txt {
+    font-size: 15px;
+    flex: 1;
+    font-family: global.$font-ja;
+
+}

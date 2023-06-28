@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="noindex">
+    <title>石井花壇</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+    <!--flatpickr-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!--Aos.js-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+    <div class="l-wrapper">
+      <header id="js-header" class="l-header">
+        <div class="l-header__inner">
+          <div class="p-header__img">
+            <a class="p-header__img-link" href="./index.html">
+              <img class="p-header-img__first" src="./assets/img/top-header-logo.png" alt="ヘッダーロゴ">
+              <img class="p-header-img__second" src="./assets/img/sub-header-logo.png" alt="ヘッダーロゴ">
+            </a>
+          </div>
+            <!-- /.header-img -->
+
+              <div class="p-header__nav">
+                <ul class="p-header__nav--list">
+                  <li class="p-header__nav--item"><a href="./oheya.html" class="p-header-navLink js-navLink">お部屋</a></li>
+                  <li class="p-header__nav--item"><a href="./food.html" class="p-header-navLink js-navLink">お料理</a></li>
+                  <li class="p-header__nav--item"><a href="./onsenn.html" class="p-header-navLink js-navLink">温泉</a></li>
+                </ul>
+              </div>
+
+
+                <div class="p-header-right">
+                    <a class="js-modal-open">
+                      宿泊予約
+                    </a>
+                </div>
+                  
+                <div class="l-header__burger--wrapper">
+                    <a id="js-button" class="p-header__burger" aria-label="menu">
+                      <span class="p-header__burger--inline"></span>
+                      <span class="p-header__burger--inline"></span>
+                      <span class="p-header__burger--inline"></span>
+                    </a>
+                  </div>
+        </div>
+        <!-- /.header-inner -->
+
+        <div class="p-drawer__nav" id="drawer-navJs">
+          <ul class="p-drawer__nav--list">
+            <li class="p-drawer__nav--item"><a href="./oheya.html" class="p-drawer-nav--link js-navLink">お部屋</a></li>
+            <li class="p-drawer__nav--item"><a href="./food.html" class="p-drawer-nav--link js-navLink">お料理</a></li>
+            <li class="p-drawer__nav--item"><a href="./onsenn.html" class="p-drawer-nav--link js-navLink">温泉</a></li>
+          </ul>
+        </div>
+
+
+        <div id="js-overlay" class="p-header__overlay"></div>
+
+      </header><!-- /.header -->
+
+
+        <main class="main l-oheya__main">
+            <div class="p-oheya__top">
+                <div class="l-oheya__top--inner">
+                    <h2 class="p-oheya-top__ttl">
+                        お部屋
+                    </h2>
+                    <!-- /.top-header-ttl -->
+                </div>
+
+                <!-- /.oheya-top_inner -->
+            </div>
+            <!-- /.oheya-top -->
+
+            <div class="l-oheya__body" data-aos="fade-up"  data-aos-duration="3000">
+              <ul class="p-breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li class="p-breadcrumb__list" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a class="p-breadcrumb__list--item" itemprop="item" href="./index.html">
+                      <span  class="p-breadcrumb__txt" itemprop="name">トップ</span>
+                  </a>
+                  <meta itemprop="position" content="1" />
+                </li>
+              
+                <li class="p-breadcrumb__list" itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a class="p-breadcrumb__list--item" itemprop="item" href="./oheya.html">
+                      <span class="p-breadcrumb__txt" itemprop="name">お部屋</span>
+                  </a>
+                  <meta itemprop="position" content="2" />
+                </li>
+              </ul>
+                  <!-- /.oheya-body_inner -->
+            </div>
+                <!-- /.oheya-body -->
+
+            <div class="l-oheya__body--ttl" data-aos="fade-up"  data-aos-duration="3000">
+              <h2>創業より受け継がれてきた石井花壇の和の造り<br> 温海の雄大な絶景を<br class="sp-down_on"> 堪能していただけるように設計された客室<br> ゆるやかに流れ行く時間に身を委ねて</h2>
+            </div>
+            <!-- /.oheya-body_ttl -->
+
+            <div class="l-room">
+              <div class="l-room__inner">
+                <div class="p-room__flex">
+                  <div class="p-room__img" data-aos="fade-up"  data-aos-duration="3000">
+                    <img src="./assets/img/oheya01.png" alt="和室のお部屋の様子">
+                  </div>
+                  <!-- /.room-img -->
+                  <div class="p-room__txt--content" data-aos="fade-up"  data-aos-duration="3000">
+                    <div class="p-room__ttl">温泉付き客室</div>
+                    <p class="p-room__txt">温海の源泉かけ流し露天風呂付き客室になります。 あなただけの上質な安らぎのひとときを。</p>
+                    <p class="p-room__txt--second"> ＊部屋数に限りがございます。 ＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。</p>
+                    <!-- /.room-Txt -->
+                    <!-- /.roomTxt -->
+
+                  </div>
+                  <!-- /.room-txtBox -->
+                </div>
+                <div class="p-room__flex p-flex__row">
+
+                  <div class="p-room__img p-reverse__img" data-aos="fade-up"  data-aos-duration="3000">
+                    <img src="./assets/img/oheya02.png" alt="庭園付き客室の外観">
+                  </div>
+                  <!-- /.room-img -->
+                  <div class=" p-flex__row--content" data-aos="fade-up"  data-aos-duration="3000">
+
+                    <div class="p-room__ttl">庭園付き客室</div>
+                    <p class="p-room__txt">庭園付きの客室になります。 お庭を見ながら、ほっとするひとときをお過ごしください。 あなただけの上質な安らぎのひとときを。</p>
+                    <p class="p-room__txt--second"> ＊お庭は複数のお客様と囲む形になります。 ＊部屋数に限りがあります。 ＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。 </p>
+                    <!-- /.room-Txt -->
+                    <!-- /.roomTxt -->
+
+                  </div>
+                  <!-- /.room-txtBox -->
+                </div>
+
+                <div class="p-room__flex " data-aos="fade-up"  data-aos-duration="3000">
+                  <div class="p-room__img p-reverse__img">
+                    <img src="./assets/img/oheya03.png" alt="一般客室の画像">
+                  </div>
+
+                  <!-- /.room-img -->
+                  <div class="p-room__txt--content">
+                    <div class="p-room__ttl">一般客室</div>
+                    <p class="p-room__txt">最もベーシックな客室になります。伝統の中にモダンさを取り入れた 内装となっており、とても過ごしやすくしていただけます。最もベーシックな客室になります。伝統の中にモダンさを取り入れた 内装となっており、とても過ごしやすくしていただけます。</p>
+                    <p class="p-room__txt--second">＊全室お部屋より日本海を望むことができます。</p>
+                    <!-- /.room-Txt -->
+                    <!-- /.roomTxt -->
+
+                  </div>
+                  <!-- /.room-txtBox -->
+                </div>
+                <!-- /.room-list -->
+              </div>
+              <!-- /.room-inner -->
+            </div>
+            <!-- /.room -->
+
+
+        </main>
+        <!-- /.main -->
+
+
+        <footer class="l-footer">
+          <div class="l-footer__inner">
+            <nav>
+              <ul class="p-footer__link">
+                <li class="p-footer__link--item"><a href="./oheya.html">お 部 屋</a></li>
+                <li class="p-footer__link--item"><a href="./food.html">お 料 理</a></li>
+                <li class="p-footer__link--item"><a href="./onsenn.html">温 泉</a></li>
+              </ul>
+              <!-- /.footer-link -->
+            </nav>
+            <div class="p-footer__logo">
+              <img src="./assets/img/footer-logo.png" alt="ロゴの画像">
+            </div>
+            <!-- /.footer-logo -->
+  
+            <div class="p-footer__des">
+              <p>〒000-0000</p>
+              <p>山形県鶴岡市xxxxxxxxxxx</p>
+            </div>
+            <!-- /.footer-des -->
+            <div class="p-footer__des">
+              <p>TEL.000-0000-0000</p>
+              <p>FAX.00-0000-0000</p>
+            </div>
+            <!-- /.footer-des -->
+            <div class="p-footer__copyright">
+              <p>Copyright <small>©</small> 石井花壇 All Rights Reserved.</p>
+            </div>
+            <!-- /.footer-copyright -->
+          </div>
+          <!-- /.footer-inner -->
+        </footer>
+        <!-- /.footer -->
+  
+      </div>
+      <!-- /.wrapper -->
+  
+  
+      <div class="l-modal  js-modal">
+        <div class="p-modal__overlay">
+  
+          <div class="l-modal-inner">
+            <div class="p-modal__content">
+  
+              <div class="p-modal___ttl--wrap">
+                <div class="p-modal__ttl"> 宿泊予約</div>
+                <!-- /.mdal-ttl -->
+                <div class="p-modal__close js-modal-close">
+                  <img src="./assets/img//close.png" alt="閉じるボタン">
+                </div>
+              </div>
+              <!-- /.modal-ttl_content -->
+              <!-- /.modal-close_btn -->
+              <div class="l-modal-form">
+                <form class="l-form__content">
+                  <label for="name">お名前</label>
+                  <input type="text" placeholder="例：石井正悟">
+                  <label for="email">メールアドレス</label>
+                  <input type="email" name="email" placeholder="例：Example@example.com">
+                  <label for="plan">
+                    ご希望プラン（空いているプランのみ表示されます）
+                  </label>
+                  <select name="" id="">
+                    <option value="プランを選択してください" selected>
+                      プランを選択してください
+                    </option>
+                    <option value="①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン">
+                      ①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+                    </option>
+                    <option value=" ②平日に優雅に楽しむ、特別宿泊プラン">
+                      ②平日に優雅に楽しむ、特別宿泊プラン
+                    </option>
+                    <option value=" ③絶景貸切露天と個室会席を満喫できるファミリープラン ">
+                      ③絶景貸切露天と個室会席を満喫できるファミリープラン 
+                    </option>
+                  </select>
+                  <!-- /# -->
+                  <label for="calender">日時選択</label>
+                  <input class="" type="text" id="calender" placeholder="日時を選択してください">
+                </form>
+                <!-- /.form-content -->
+                
+                <div class="p-modal__button">
+                  <a class="c-modal__button" href="">送信する</a>
+                </div>
+                <!-- /.modal-button -->
+              </div>
+            </div>
+            <!-- /.modal-form -->
+            <!-- /.modal-contebt -->
+          </div>
+        </div>
+        <!-- /.modal-overlay -->
+        <!-- /.modal-wrapper -->
+      </div>
+      <!-- /.modal -->
+      
+  
+      <!-- jqueryの記述 -->
+  
+  
+      <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        defer></script>
+      <script src="./assets/js/script.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  
+  <script>
+  
+  AOS.init();
+  
+  
+    flatpickr.localize(flatpickr.l10ns.ja);
+    flatpickr('#calender', {
+        minDate: "today",
+        mode: "range",
+    });
+  </script>
+  
+  
+    </body>
+  </html>
+  

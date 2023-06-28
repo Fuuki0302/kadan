@@ -1,0 +1,45 @@
+@use  "../global" as global;
+
+.l-onsen {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.l-onsen__main{
+
+    background: #fff;
+    padding-bottom: 150px;
+
+    @include global.mq('tab') {
+        padding-bottom: 170px;
+    }
+    @include global.mq('sp') {
+        padding-bottom: 170px;
+    }
+    @include global.mq('sp-down') {
+        padding-bottom: 170px;
+    }
+        
+
+}
+
+.l-onsen__top{
+    background-image: url(../img/onsen-header.png);
+    padding-top: 80px;
+    width: 100%;
+    z-index: 98;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+
+}
+
+
+.l-onsen-body__inner{
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+
+}

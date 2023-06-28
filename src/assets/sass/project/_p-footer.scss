@@ -1,0 +1,61 @@
+@use  "../global" as global;
+
+
+.p-footer__link{
+    writing-mode: vertical-rl;
+    margin-right: auto;
+    margin-left: auto;
+
+
+}
+.p-footer__link--item {
+    padding-right: 40%;
+
+    &:nth-child(1) {
+      padding-right: 0;
+    }
+    
+    a {
+        font-size: 18px;
+        font-weight: 500;
+        color: #3e3e3e;
+        letter-spacing: 5px;
+        font-family: global.$font-ja;
+    }
+}
+
+.p-footer__logo{
+    text-align: center;
+    margin-top: 96px;
+    margin-bottom: 72px;
+
+}
+
+.p-footer__des{
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+    display: flex;
+    font-family: global.$font-ja;
+
+    p:first-child {
+      margin-right: 20px;
+    }
+
+}
+
+.p-footer__copyright{
+    font-family: global.$font-ja;
+    background: #000;
+    text-align: center;
+    padding: 24px 0;
+    margin-top: 60px;
+    p {
+      color: #fff;
+      font-size: 12px;
+      font-weight: 500;
+      font-family: global.$font-ja;
+    }
+
+}

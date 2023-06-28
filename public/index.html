@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="noindex">
+    <title>石井花壇</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+    <!--flatpickr-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!--Aos.js-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+    <div class="l-wrapper">
+      <header id="js-header" class="l-header">
+        <div class="l-header__inner">
+          <div class="p-header__img">
+            <a class="p-header__img-link" href="./index.html">
+              <img class="p-header-img__first" src="./assets/img/top-header-logo.png" alt="ヘッダーロゴ">
+              <img class="p-header-img__second" src="./assets/img/sub-header-logo.png" alt="ヘッダーロゴ">
+            </a>
+          </div>
+            <!-- /.header-img -->
+
+              <div class="p-header__nav">
+                <ul class="p-header__nav--list">
+                  <li class="p-header__nav--item"><a href="./oheya.html" class="p-header-navLink js-navLink">お部屋</a></li>
+                  <li class="p-header__nav--item"><a href="./food.html" class="p-header-navLink js-navLink">お料理</a></li>
+                  <li class="p-header__nav--item"><a href="./onsenn.html" class="p-header-navLink js-navLink">温泉</a></li>
+                </ul>
+              </div>
+
+
+                <div class="p-header-right">
+                    <a class="js-modal-open">
+                      宿泊予約
+                    </a>
+                </div>
+                  
+                <div class="l-header__burger--wrapper">
+                    <a id="js-button" class="p-header__burger" aria-label="menu">
+                      <span class="p-header__burger--inline"></span>
+                      <span class="p-header__burger--inline"></span>
+                      <span class="p-header__burger--inline"></span>
+                    </a>
+                  </div>
+        </div>
+        <!-- /.header-inner -->
+
+        <div class="p-drawer__nav" id="drawer-navJs">
+          <ul class="p-drawer__nav--list">
+            <li class="p-drawer__nav--item"><a href="./oheya.html" class="p-drawer-nav--link js-navLink">お部屋</a></li>
+            <li class="p-drawer__nav--item"><a href="./food.html" class="p-drawer-nav--link js-navLink">お料理</a></li>
+            <li class="p-drawer__nav--item"><a href="./onsenn.html" class="p-drawer-nav--link js-navLink">温泉</a></li>
+          </ul>
+        </div>
+
+
+        <div id="js-overlay" class="p-header__overlay"></div>
+
+      </header><!-- /.header -->
+
+      <main class="l-main">
+        <div class="l-top">
+          <div class="l-top__inner">
+          <div class="p-top__slide">
+            <div class="p-top__slide--img"></div>
+            <div class="p-top__slide--img"></div>
+            <div class="p-top__slide--img"></div>
+            <!-- /.top-slide_img -->
+              <div class="p-top__txt--wrap">
+                <p class="p-top__txt">頑 張 る 人 の</p>
+                <p class="p-top__txt">頑 張 ら な い 時 間</p>
+                <!-- /.top-txt -->
+                <!-- /.top-txt -->
+              </div>
+              <!-- /.top-txtBox -->
+            </div>
+            <!-- /.top-inner -->
+          </div>
+          <!-- /.top-slide -->
+        </div>
+        <!-- /.top -->
+
+        <div class="l-des" data-aos="fade-up"  data-aos-duration="3000">
+          <div class="l-des__inner">
+            <div class="p-des__content">
+              <div class="p-des__content--head">
+                <p class="p-des__content--ttl">温 海 温 泉 の</p>
+                <!-- /.des-txtTtl -->
+                <p class="p-des__content--ttl">美 し さ に 癒 や さ れ て</p>
+                <!-- /.des-txtTtl -->
+              </div>
+                <p class="p-des__txt">東 北 の 奥 座 敷 で あ る 温 海 温 泉 郷<br>開 湯 は 約 <span class="des-txtP_add">1</span><span class="des-txtP_add">3</span><span class="des-txtP_add">0</span><span class="des-txtP_add">0</span>年 前 と さ れ 、 役 小 角 が<br>発 見 し た と 伝 え ら れ ま す</p>
+                <p class="p-des__txt">石 井 花 壇 は 江 戸 よ り 続 く 由 緒 あ る 旅 館 で<br>ク ラ シ ッ ク な 作 り の 中 に 大 正 ロ マ ン あ ふ れ る<br>内 装 を 残 し て お り ま す</p>
+                <p class="p-des__txt">圧 倒 的 癒 や し の 空 間 で <br>頑 張 る 現 代 人 に<br>頑 張 ら な い 圧 倒 的 な 非 日 常 を ご 提 供 し ま す</p>
+                <p class="p-des__txt p-des__txt--action">石 井 花 壇</p>
+                <!-- /.des-txtTtl -->
+              </div>
+              <!-- /.des-txtP_wrapper -->
+
+          </div>
+          <!-- /.des-inner -->
+        </div>
+        <!-- /.des -->
+      <section class="l-overview">
+        <div class="l-overview__inner">
+          <div class="c-overview__flex" >
+            <div class="p-overview__img" data-aos="fade-up"  data-aos-duration="3000">
+              <img src="./assets/img/oheya-top@2x.png" alt="館内のお部屋の写真">
+            </div>
+            <!-- /.overview-img -->
+            <div class="p-overview__right" data-aos="fade-up"  data-aos-duration="3000">
+              <h2 class="p-overview__ttl" data-aos="fade-up"  data-aos-duration="3000">喧騒から離れた空間 <br> 心落ち着く至極のひととき</h2>
+              <!-- /.overview-ttl -->
+              <p class="p-overview__txt" data-aos="fade-up"  data-aos-duration="3000">まるで時が止まったかのような、圧倒的な静寂のなかで、<br class="sp-on"> ひたすらにゆったりと…。<br> 最高級の「何もしない時間」をお過ごしください。</p>
+              <div class="p-contact__button--wrap" data-aos="fade-up"  data-aos-duration="3000">
+                <a href="./oheya.html" class="c-contact__btn">お部屋について</a>
+                <!-- /.contact-btn -->
+              </div>
+            </div>  
+            <!-- /.overview-right -->
+            <!-- /.contact-btn -->
+          </div>
+
+          <!-- /.overview-flex -->
+          <div class="c-overview__flex c-overview-flex_second c-flex__row">
+            <div class="p-overview__img--second" data-aos="fade-up"  data-aos-duration="3000">
+              <img src="./assets/img/menu-top@2x.png" alt="館内のメニュー お肉">
+            </div>
+            <!-- /.overview-img -->
+            <div class="p-overview-right_second" data-aos="fade-up"  data-aos-duration="3000">
+              <h2 class="p-overview__ttl" data-aos="fade-up"  data-aos-duration="3000">出迎えるのは<br> 極上の温海料理</h2>
+              <!-- /.overview-ttl -->
+              <p p-overview__txt data-aos="fade-up"  data-aos-duration="3000">最も旬の食材を愉しむ、最高の贅沢を<br> 最高級A5ランクの米沢牛と共に頂く。<br> あなたの人生史に残る「極上の感動」を<br> お約束します。</p>
+              <div class="p-contact__button--wrap" data-aos="fade-up"  data-aos-duration="3000">
+                <a href="./food.html" class="c-contact__btn">料理について</a>
+                <!-- /.contact-btn -->
+              </div>
+            </div>
+            <!-- /.overview-right -->
+            <!-- /.contact-btn -->
+          </div>
+          <!-- /.overview-flex -->
+          <div class="c-overview__flex">
+            <div class="p-overview__img" data-aos="fade-up"  data-aos-duration="3000">
+              <img src="./assets/img/onsen-top@2x.png" alt="温泉の画像">
+            </div>
+            <!-- /.overview-img -->
+            <div class="p-overview__right" data-aos="fade-up"  data-aos-duration="3000">
+              <h2 class="p-overview__ttl" data-aos="fade-up"  data-aos-duration="3000">疲れ切った身体にやすらぎを<br> 温海の源泉に癒やされて</h2>
+              <!-- /.overview-ttl -->
+              <p class="p-overview__txt" data-aos="fade-up"  data-aos-duration="3000">古くは弘法大師の病をも治療したと言われる温海の泉質。<br class="sp-on"> 現代人の疲弊しきった身体を修復する最高級の湯治場として<br class="sp-on"> ご活用ください。</p>
+              <div class="p-contact__button--wrap" data-aos="fade-up"  data-aos-duration="3000">
+                <a href="./onsenn.html" class="c-contact__btn">温泉について</a>
+                <!-- /.contact-btn -->
+              </div>
+            </div>
+            <!-- /.overview-right -->
+            <!-- /.contact-btn -->
+          </div>
+          <!-- /.overview-flex -->
+        </div>
+        <!-- /.overview-inner -->
+      </section>
+      <!-- /.overview -->
+
+      <section class="p-plan" data-aos="fade-up"  data-aos-duration="3000">
+        <div class="p-plan__logo" data-aos="fade-up"  data-aos-duration="3000">
+          <img src="./assets/img/logo02.png" alt="ロゴの画像">
+        </div>
+        <div class="p-plan__ttl" data-aos="fade-up"  data-aos-duration="3000">おすすめご宿泊プラン</div>
+        <!-- /.plan-ttl -->
+        <div class="plan-inner">
+          <!-- /.plan-logo -->
+          <nav class="p-plan__content">
+            <ul class="p-plan__flex">
+
+              <li class="p-plan__list" data-aos="fade-up"  data-aos-duration="3000">
+                <div class="p-plan-img">
+                  <img src="./assets/img/recommended01@2x.png" alt="館内のメニュー お魚">
+                </div>
+                <!-- /.plan-img -->
+                <div class="p-plan__txt--wrap">
+                  <h3 class="p-plan__txt">朝食付きプラン、日本近海で取れたのどぐろを朝食として…</h3>
+                  <p class="p-plan__des">最高級と称されるのどぐろ、正式には「アカ ムツ」と呼ばれる魚、味は独特の上品な味わ いで、焼いても煮ても美味</p>
+                </div>
+
+              </li>
+              <li class="p-plan__list" data-aos="fade-up"  data-aos-duration="3000">
+                <div class="p-plan-img">
+                  <img src="./assets/img/recommended02@2x.png" alt="館内のメニュー カニの味噌汁">
+                </div>
+                <!-- /.plan-img -->
+                <div class="p-plan__txt--wrap">
+                  <h3 class="p-plan__txt">【期間限定】温海蟹をたっぷりと愉しむプラン。</h3>
+                  <p class="p-plan__des">温海で水揚げされた蟹は「温海蟹」 として知られ、嗜好品として愛されて きました。この宿泊プランでは存分に</p>
+                </div>
+                <!-- /.plan-txtBox -->
+              </li>
+
+              <li class="p-plan__list" data-aos="fade-up"  data-aos-duration="3000">
+                <div class="p-plan-img">
+                  <img src="./assets/img/recommended03@2x.png" alt="館内のメニュー お刺身">
+                </div>
+                <!-- /.plan-img -->
+                <div class="p-plan__txt--wrap">
+                  <h3 class="p-plan__txt">【平日限定】贅沢美味懐石プラン。 海辺の四季旬彩プラン。</h3>
+                  <p class="p-plan__des">温海近海で取れた魚を鮮度そのままに舟盛りに してご提供。生きた味をお楽しみください。</p>
+                </div>
+                <!-- /.plan-txtBox -->
+              </li>
+            </ul>
+            <!-- /.plan-flex -->
+          </nav>
+          <!-- /.plan-flex -->
+        </div>
+        <!-- /.plan-inner -->
+      </section>
+      <!-- /.plan -->
+
+      <section class="p-info">
+        <div class="p-info__inner">
+          <div class="p-info__logo" data-aos="fade-up"  data-aos-duration="3000">
+            <img src="./assets/img/logo02.png" alt="ロゴの画像">
+          </div>
+          <!-- /.info-logo -->
+          <div class="p-info__ttl" data-aos="fade-up"  data-aos-duration="3000">
+            お知らせ
+          </div>
+          <!-- /.info-ttl -->
+          <ul class="p-info__txt--wrap p-tab-area" data-aos="fade-up"  data-aos-duration="3000">
+            <li class="p-info__list">
+              <a class="p-tab"> 営業情報</a>
+            </li>
+            <li class="p-info__list">
+              <a class="p-tab"> その他</a>
+            </li>
+          </ul>
+          <div class="p-info-grid active" data-aos="fade-up"  data-aos-duration="3000">
+            <div class="p-grid__item">
+              <a href="" class="p-grid__item--link">
+                <div class="p-grid--head">
+                  <img src="./assets/img/news01.png" alt="">
+                </div>
+                <!-- /.grid-img -->
+                <div class="p-grid__body">
+                  <p>2020.12.24</p>
+                  <p>年末最後の営業日は27日になります。</p>
+                </div>
+                <!-- /.p-grid--body -->
+              </a>
+            </div>
+
+            <div class="p-grid__item">
+              <a href="" class="p-grid__item--link">
+                <div class="p-grid--head">
+                  <img src="./assets/img/news02.png" alt="">
+                </div>
+                <!-- /.grid-img -->
+                <div class="p-grid__body">
+                  <p>2020.12.24</p>
+                  <p>年末最後の営業日は27日になります。</p>
+                </div>
+                <!-- /.p-grid--body -->
+              </a>
+            </div>
+            <div class="p-grid__item">
+              <a href="" class="p-grid__item--link">
+                <div class="p-grid--head">
+                  <img src="./assets/img/news02.png" alt="">
+                </div>
+                <!-- /.grid-img -->
+                <div class="p-grid__body">
+                  <p>2020.12.24</p>
+                  <p>年末最後の営業日は27日になります。</p>
+                </div>
+                <!-- /.p-grid--body -->
+              </a>
+            </div>
+            <div class="p-grid__item">
+              <a href="" class="p-grid__item--link">
+                <div class="p-grid--head">
+                  <img src="./assets/img/news01.png" alt="">
+                </div>
+                <!-- /.grid-img -->
+                <div class="p-grid__body">
+                  <p>2020.12.24</p>
+                  <p>年末最後の営業日は27日になります。</p>
+                </div>
+                <!-- /.p-grid--body -->
+              </a>
+            </div>
+            <div class="p-grid__item">
+              <a href="" class="p-grid__item--link">
+                <div class="p-grid--head">
+                  <img src="./assets/img/news01.png" alt="">
+                </div>
+                <!-- /.grid-img -->
+                <div class="p-grid__body">
+                  <p>2020.12.24</p>
+                  <p>年末最後の営業日は27日になります。</p>
+                </div>
+                <!-- /.p-grid--body -->
+              </a>
+            </div>
+            <div class="p-grid__item">
+              <a href="" class="p-grid__item--link">
+                <div class="p-grid--head">
+                  <img src="./assets/img/news02.png" alt="">
+                </div>
+                <!-- /.grid-img -->
+                <div class="p-grid__body">
+                  <p>2020.12.24</p>
+                  <p>年末最後の営業日は27日になります。</p>
+                </div>
+                <!-- /.p-grid--body -->
+              </a>
+            </div>
+            <!-- /.p-grid__item -->
+          </div>
+          <!-- /.info-grid -->
+
+          <!-- //  display: none;// -->
+          <div class="p-info-grid">
+            <div class="p-grid__item">
+              <a href="" class="p-grid__item--link">
+                <div class="p-grid--head">
+                  <img src="./assets/img/news02.png" alt="">
+                </div>
+                <!-- /.grid-img -->
+                <div class="p-grid__body">
+                  <p>2020.12.24</p>
+                  <p>年末最後の営業日は27日になります。</p>
+                </div>
+                <!-- /.p-grid--body -->
+              </a>
+            </div>
+            <div class="p-grid__item">
+              <a href="" class="p-grid__item--link">
+                <div class="p-grid--head">
+                  <img src="./assets/img/news01.png" alt="">
+                </div>
+                <!-- /.grid-img -->
+                <div class="p-grid__body">
+                  <p>2020.12.24</p>
+                  <p>年末最後の営業日は27日になります。</p>
+                </div>
+                <!-- /.p-grid--body -->
+              </a>
+            </div>
+            <div class="p-grid__item">
+              <a href="" class="p-grid__item--link">
+                <div class="p-grid--head">
+                  <img src="./assets/img/news01.png" alt="">
+                </div>
+                <!-- /.grid-img -->
+                <div class="p-grid__body">
+                  <p>2020.12.24</p>
+                  <p>年末最後の営業日は27日になります。</p>
+                </div>
+                <!-- /.p-grid--body -->
+              </a>
+            </div>
+            <div class="p-grid__item">
+              <a href="" class="p-grid__item--link">
+                <div class="p-grid--head">
+                  <img src="./assets/img/news02.png" alt="">
+                </div>
+                <!-- /.grid-img -->
+                <div class="p-grid__body">
+                  <p>2020.12.24</p>
+                  <p>年末最後の営業日は27日になります。</p>
+                </div>
+                <!-- /.p-grid--body -->
+              </a>
+            </div>
+            <div class="p-grid__item">
+              <a href="" class="p-grid__item--link">
+                <div class="p-grid--head">
+                  <img src="./assets/img/news02.png" alt="">
+                </div>
+                <!-- /.grid-img -->
+                <div class="p-grid__body">
+                  <p>2020.12.24</p>
+                  <p>年末最後の営業日は27日になります。</p>
+                </div>
+                <!-- /.p-grid--body -->
+              </a>
+            </div>
+            <div class="p-grid__item">
+              <a href="" class="p-grid__item--link">
+                <div class="p-grid--head">
+                  <img src="./assets/img/news01.png" alt="">
+                </div>
+                <!-- /.grid-img -->
+                <div class="p-grid__body">
+                  <p>2020.12.24</p>
+                  <p>年末最後の営業日は27日になります。</p>
+                </div>
+                <!-- /.p-grid--body -->
+              </a>
+            </div>
+            <!-- /.p-grid__item -->
+          </div>
+          <!-- /.info-grid -->
+        </div>
+        <!-- /.info-inner -->
+      </section>
+      <!-- /.info -->
+
+      <section class="l-access">
+        <div class="l-access__inner l-inner">
+          <div class="p-access__logo" data-aos="fade-up"  data-aos-duration="3000">
+            <img src="./assets/img/logo02.png" alt="ロゴの画像">
+          </div>
+          <!-- /.access-img -->
+          <div class="p-access__ttl" data-aos="fade-up"  data-aos-duration="3000">アクセス</div>
+          <!-- /.access-ttl -->
+          <div class="access-flex c-flex">
+            <div class="access-flex--img" data-aos="fade-up"  data-aos-duration="3000">
+              <img src="./assets/img/acess@2x.png" alt="積雪している旅館の外観">
+            </div>
+            <!-- /.access-flexImg -->
+            <div class="p-access__flex--txt" data-aos="fade-up"  data-aos-duration="3000">
+              <dl>
+                <dt>住所</dt>
+                <dd>〒000-0000 <br> 山形県鶴岡市xxxxxxxxxx</dd>
+                <dt>TEL/FAX</dt>
+                <dd>000-0000-0000/00-0000-0000</dd>
+                <dt>営業時間</dt>
+                <dd>14:00-23:00</dd>
+              </dl>
+              <p>＊4名以上のご予約の場合は、最寄り駅の「鶴岡駅」より送迎が可能ですのでご連絡ください。</p>
+            </div>
+            <!-- /.access-flexTxt -->
+
+          </div>
+          <!-- /.access-flex -->
+          <div class="p-access-map" data-aos="fade-up"  data-aos-duration="3000">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49867.67291845735!2d139.56354092329954!3d38.63210218020519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8c6dbd6c03ae15%3A0x10bc5da99bc816ef!2z44CSOTk5LTcyMDUg5bGx5b2i55yM6ba05bKh5biC5rip5rW3!5e0!3m2!1sja!2sjp!4v1678024491133!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <!-- /.access-map -->
+
+        </div>
+        <!-- /.access-inner -->
+      </section>
+      <!-- /.access -->
+    
+      </main>
+      <!-- /.main -->
+
+      <footer class="l-footer">
+        <div class="l-footer__inner">
+          <nav>
+            <ul class="p-footer__link">
+              <li class="p-footer__link--item"><a href="./oheya.html">お 部 屋</a></li>
+              <li class="p-footer__link--item"><a href="./food.html">お 料 理</a></li>
+              <li class="p-footer__link--item"><a href="./onsenn.html">温 泉</a></li>
+            </ul>
+            <!-- /.footer-link -->
+          </nav>
+          <div class="p-footer__logo">
+            <img src="./assets/img/footer-logo.png" alt="ロゴの画像">
+          </div>
+          <!-- /.footer-logo -->
+
+          <div class="p-footer__des">
+            <p>〒000-0000</p>
+            <p>山形県鶴岡市xxxxxxxxxxx</p>
+          </div>
+          <!-- /.footer-des -->
+          <div class="p-footer__des">
+            <p>TEL.000-0000-0000</p>
+            <p>FAX.00-0000-0000</p>
+          </div>
+          <!-- /.footer-des -->
+          <div class="p-footer__copyright">
+            <p>Copyright <small>©</small> 石井花壇 All Rights Reserved.</p>
+          </div>
+          <!-- /.footer-copyright -->
+        </div>
+        <!-- /.footer-inner -->
+      </footer>
+      <!-- /.footer -->
+
+    </div>
+    <!-- /.wrapper -->
+
+
+    <div class="l-modal  js-modal">
+      <div class="p-modal__overlay">
+
+        <div class="l-modal-inner">
+          <div class="p-modal__content">
+
+            <div class="p-modal___ttl--wrap">
+              <div class="p-modal__ttl"> 宿泊予約</div>
+              <!-- /.mdal-ttl -->
+              <div class="p-modal__close js-modal-close">
+                <img src="./assets/img//close.png" alt="閉じるボタン">
+              </div>
+            </div>
+            <!-- /.modal-ttl_content -->
+            <!-- /.modal-close_btn -->
+            <div class="l-modal-form">
+              <form class="l-form__content">
+                <label for="name">お名前</label>
+                <input id="name" type="text" placeholder="例：石井正悟">
+                <label for="email">メールアドレス</label>
+                <input  id="email" type="email" name="email" placeholder="例：Example@example.com">
+                <label for="plan" name="plan">
+                  ご希望プラン（空いているプランのみ表示されます）
+                </label>
+                <select name="" id="plan">
+                  <option value="プランを選択してください" selected>
+                    プランを選択してください
+                  </option>
+                  <option value="①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン">
+                    ①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+                  </option>
+                  <option value=" ②平日に優雅に楽しむ、特別宿泊プラン">
+                    ②平日に優雅に楽しむ、特別宿泊プラン
+                  </option>
+                  <option value=" ③絶景貸切露天と個室会席を満喫できるファミリープラン ">
+                    ③絶景貸切露天と個室会席を満喫できるファミリープラン 
+                  </option>
+                </select>
+                <!-- /# -->
+                <label for="calender">日時選択</label>
+                <input class="" type="text" id="calender" placeholder="日時を選択してください">
+              </form>
+              <!-- /.form-content -->
+              
+              <div class="p-modal__button">
+                <a class="c-modal__button" href="">送信する</a>
+              </div>
+              <!-- /.modal-button -->
+            </div>
+          </div>
+          <!-- /.modal-form -->
+          <!-- /.modal-contebt -->
+        </div>
+      </div>
+      <!-- /.modal-overlay -->
+      <!-- /.modal-wrapper -->
+    </div>
+    <!-- /.modal -->
+    
+
+    <!-- jqueryの記述 -->
+
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      defer></script>
+    <script src="./assets/js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<script>
+
+AOS.init();
+
+
+  flatpickr.localize(flatpickr.l10ns.ja);
+  flatpickr('#calender', {
+      minDate: "today",
+      mode: "range",
+  });
+</script>
+
+
+  </body>
+</html>

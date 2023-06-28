@@ -1,0 +1,55 @@
+@use  "../global" as global;
+
+
+.l-oheya__main{
+  background: #fff;
+  padding-bottom: 150px;
+
+  @include global.mq('tab') {
+    padding-bottom: 170px;
+  }
+  @include global.mq('sp') {
+    padding-bottom: 170px;
+  }
+  @include global.mq('sp-down') {
+    padding-bottom: 170px;
+  }
+
+}
+
+
+.l-oheya__body--inner{
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.l-oheya__body--ttl{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    font-family: global.$font-ja;
+
+}
+
+.l-room{
+    margin: 0 auto;
+
+  @include global.mq('pc') {
+    max-width: 1180px;
+  }
+  @include global.mq('tab') {
+    width: 90%;
+
+  }
+
+}
+
+.l-room__inner{
+    margin: 0 auto;
+    width: 90%;
+
+}
+

@@ -1,0 +1,164 @@
+@use  "../global" as global;
+
+
+.p-food__flex{
+    display: flex;
+    position: relative;
+    height: 440px;
+    z-index: 9;
+
+    @include global.mq('pc') {
+        margin-top: 84px;
+    }
+
+    @include global.mq('sp-down') {
+        margin-top: 90px;
+    }
+
+    @include global.mq('sp') {
+        margin-top: 100px;
+    }
+
+    @include global.mq('tab') {
+
+        &:nth-child(2) {
+        margin-top: 230px;
+        }
+        &:nth-child(3) {
+        margin-top: 260px;
+        }
+    }
+
+    @include global.mq('sp') {
+        display: block;
+        position: static;
+        width: 100%;
+        &:nth-child(2) {
+        margin-top: 160px;
+        }
+        &:nth-child(3) {
+        margin-top: 160px;
+        }
+
+    }
+    @include global.mq('sp-down') {
+        display: block;
+        position: static;
+        width: 100%;
+        &:nth-child(2) {
+        margin-top: 50px;
+        }
+        &:nth-child(3) {
+        margin-top: 100px;
+        }
+    }
+
+}
+
+.p-food__img{
+    img {
+        @include global.mq('sp') {
+            width: 100%;
+        }
+        @include global.mq('sp-down') {
+            width: 100%;
+        }
+        }
+}
+
+.p-food__txt--content{
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-size: cover;
+    font-weight: 500;
+    position: absolute;
+    top: 60px;
+    left: 360px;
+    padding-left: 240px;
+    padding-right: 68px;
+    flex: 1;
+    padding-bottom: 100px;
+    z-index: -1;
+
+    @include global.mq('tab') {
+        left: 186px;
+        top: 235px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+
+    @include global.mq('sp') {
+        position: static;
+        padding: 13px;
+    }
+    @include global.mq('sp-down') {
+        position: static;
+        padding: 13px;
+    }
+
+
+}
+
+.p-food__ttl{
+    font-size: 24px;
+    font-family: global.$font-ja;
+    @include global.mq('pc') {
+        padding-top: 60px;
+    }
+    @include global.mq('tab') {
+        padding-top: 88px;
+    }
+}
+
+.p-food__txt{
+    font-size: 16px;
+    margin-top: 52px;
+    font-family: global.$font-ja;
+
+
+    @include global.mq('tab') {
+        margin-top: 30px;
+    }
+
+    @include global.mq('sp') {
+        margin-top: 10px;
+    }
+    @include global.mq('sp-down') {
+        margin-top: 20px;
+    }
+
+}
+
+.p-food__txt-second{
+    font-size: 14px;
+    margin-top: 52px;
+    font-family: global.$font-ja;
+
+@include global.mq('tab') {
+    margin-top: 30px;
+}
+
+@include global.mq('sp') {
+    margin-top: 10px;
+}
+
+@include global.mq('sp-down') {
+    margin-top: 30px;
+}
+
+}
+
+.p-flex__row{
+    flex-direction: row-reverse;
+
+    @include global.mq('sp') {
+        display: block;
+        position: static;
+    }
+    @include global.mq('sp-down') {
+        display: block;
+        position: static;
+    }
+
+}

@@ -1,0 +1,26 @@
+
+@use  "../global" as global;
+
+.sp-down_on {
+@include global.mq('sp') {
+    display: block;
+}
+}
+.sp-down_on {
+@include global.mq('pc') {
+    display: none;
+}
+}
+.sp-down_on {
+@include global.mq('tab') {
+    display: none;
+}
+}
+
+// 490px以下の開業について
+.sp-on {
+@include global.mq('sp-down') {
+    display: none;
+}
+
+}

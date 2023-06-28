@@ -1,0 +1,123 @@
+@use  "../global" as global;
+
+
+/* overview
+====================================================*/
+
+.p-overview__img {
+    margin-top: 60px;
+    @include global.mq('pc') {
+      width: 54.6875%;
+    }
+
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+}
+
+.p-overview__right{
+    @include global.mq('pc') {
+        padding-left: 8.6642%;
+        flex: 1;
+        padding-top: 30px;
+      }
+      margin-top: 30px;
+
+}
+
+.p-overview__ttl{
+    @include global.mq('pc') {
+        font-size: 36px;
+        text-align: left;
+        line-height: calc(62 / 36);
+      }
+      font-size: 24px;
+      text-align: center;
+      font-weight: 500;
+      color: #3e3e3e;
+      font-family: global.$font-ja;
+
+
+}
+.p-overview__txt {
+    @include global.mq('pc') {
+    text-align: left;
+    padding-top: 60px;
+    line-height: 2;
+    }
+
+    padding-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3e3e3e;
+    font-family: global.$font-ja;
+}
+
+
+.p-overview__img--second{
+    margin-top: 60px;
+    @include global.mq('pc') {
+      width: 54.6875%;
+    }
+
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+}
+
+.p-overview-right_second{
+    @include global.mq('pc') {
+        padding-right: 8.6642%;
+      }
+      padding-top: 30px;
+
+      p {
+        @include global.mq('pc') {
+          text-align: left;
+          padding-top: 60px;
+          line-height:  2;
+        }
+        padding-top: 30px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        color: #3e3e3e;
+        font-family: global.$font-ja;
+      }
+
+}
+
+.p-overview-ttl{
+    @include global.mq('pc') {
+        font-size: 36px;
+        text-align: left;
+        line-height: 1.7222;
+      }
+      text-align: center;
+      font-size: 24px;
+      font-weight: 500;
+      color: #3e3e3e;
+      font-family: global.$font-ja;
+
+      p {
+        @include global.mq('pc') {
+          text-align: left;
+          padding-top: 60px;
+          line-height:  2;
+        }
+        padding-top: 30px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        color: #3e3e3e;
+        font-family: global.$font-ja;
+      }
+
+}

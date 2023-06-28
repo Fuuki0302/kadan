@@ -1,0 +1,132 @@
+@use  "../global" as global;
+
+.p-access__logo{
+    text-align: center;
+
+}
+
+.p-access__ttl{
+    font-weight: 700;
+    font-size: 36px;
+    font-family: global.$font-ja;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.access-flex{
+@include global.mq('pc') {
+    display: flex;
+    margin-top: 60px;
+    }
+
+    @include global.mq('tab') {
+    margin-top: 70px;
+    }
+    @include global.mq('sp') {
+    margin-top: 65px;
+    }
+    @include global.mq('sp-down') {
+    margin-top: 65px;
+    }
+
+}
+
+.c-flex{
+
+}
+
+.access-flex--img{
+    img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+}
+
+.p-access__flex--txt {
+    font-family: global.$font-ja;
+    @include global.mq('pc') {
+        width: 100%;
+        padding-left: 6.6779%;
+    }
+
+
+}
+dt,dd {
+    font-size: 16px;
+    font-family: global.$font-ja;
+    padding-top: 8px;
+
+    @include global.mq('tab') {
+      text-align: left;
+    }
+
+  }
+  dt {
+    font-weight: 800;
+
+    &:first-child {
+      margin-top: 16px;
+    }
+
+  }
+
+
+  dd {
+    font-weight: 500;
+
+  }
+
+
+
+.p-access-map{
+    position: relative;
+    width: 100%;
+    height: 0;
+    @include global.mq('pc') {
+      padding-top: 56.25%; /* 比率を4:3に固定 */
+    }
+
+    @include global.mq('tab') {
+      padding-top: 75%;
+    }
+    @include global.mq('sp') {
+      padding-top: 75%;
+    }
+    @include global.mq('sp-down') {
+      padding-top: 75%;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    @include global.mq('pc') {
+      width: 67.1186%;
+      margin-top: 60px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+
+    @include global.mq('tab') {
+      text-align: center;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    @include global.mq('sp') {
+      margin-top: 55px;
+    }
+    @include global.mq('sp-down') {
+      margin-top: 55px;
+    }
+
+}

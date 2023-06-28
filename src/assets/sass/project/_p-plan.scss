@@ -1,0 +1,210 @@
+@use  "../global" as global;
+
+.p-plan{
+    background-image: url(../img/bg02.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 78px;
+    padding-bottom: 144px;
+
+}
+
+.p-plan__logo{
+    text-align: center;
+    padding-top: 60px;
+
+}
+
+.p-plan__ttl{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: calc(36 /32);
+    font-family: global.$font-ja;
+
+}
+
+.plan-inner{
+    width: 100%;
+    @include global.mq('sp') {
+      margin-right: auto;
+      margin-left: auto;
+      width: 90%;
+    }
+    @include global.mq('sp-down') {
+      margin-right: auto;
+      margin-left: auto;
+      width: 90%;
+    }
+
+
+    @include global.mq('pc') {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1180px
+    }
+
+    @include global.mq('tab') {
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+}
+
+.p-plan__content {
+
+}
+
+.p-plan__flex{
+@include global.mq('pc') {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    @include global.mq('sp') {
+    margin-top: 30px;
+    }
+    @include global.mq('sp-down') {
+    margin-top: 30px;
+    }
+
+    margin-top: 66px;
+    width: 100%;
+
+}
+
+.p-plan__list{
+    @include global.mq('pc') {
+        width: 28.05085%;
+      }
+  
+      @include global.mq('tab') {
+        display: flex;
+        &:not(:first-child){
+          padding-top: 30px;
+        }
+      }
+  
+  
+      @include global.mq('sp') {
+        display: block;
+        padding-top: 28px;
+        
+      }
+      @include global.mq('sp-up') {
+        display: block;
+        width: 100%;
+  
+      }
+
+}
+
+.p-plan-img{
+    overflow: hidden;
+
+    @include global.mq('tab') {
+      width: 50%;
+    }
+
+    @include global.mq('sp') {
+      width: 100%;
+    }
+
+    @include global.mq('sp-down') {
+      width: 100%;
+    }
+
+
+    
+    img {
+      
+      &:hover {
+        transition: transform .9s ease;
+
+        transform: scale(1.1);
+      }
+
+      @include global.mq('pc') {
+        width: 100%;
+      }
+      @include global.mq('tab') {
+        width: 100%;
+      }
+
+      @include global.mq('sp') {
+        width: 100%;
+      }
+  
+      @include global.mq('sp-down') {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+    }
+
+}
+
+.p-plan__txt--wrap{
+    flex: 1;
+    line-height: 1.45;
+
+    @include global.mq('sp') {
+      width: 100%;
+    }
+
+    @include global.mq('sp-down') {
+      width: 100%;
+      margin-top: 20px;
+
+    }
+    @include global.mq('tab') {
+      padding-top: 24px;
+      padding-left: 4%;
+      width: 60%;
+    }
+
+    @include global.mq('sp') {
+      margin-top: 30px;
+    }
+
+}
+
+.p-plan__txt{
+    @include global.mq('pc') {
+        margin-top: 32px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.6;
+      }
+      
+      @include global.mq('sp') {
+        font-size: 20px;
+      }
+      font-size: 20px;
+      font-weight: 500;
+      font-family: global.$font-ja;
+
+
+}
+
+.p-plan__des{
+
+    @include global.mq('pc') {
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2;
+
+      }
+
+      @include global.mq('sp') {
+        margin-top: 15px;
+      }
+
+
+      margin-top: 24px;
+      font-size: 18px;
+      font-family: global.$font-ja;
+}

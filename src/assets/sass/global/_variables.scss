@@ -1,0 +1,36 @@
+
+/* colorの設定
+
+====================================================*/
+$color01 : #3e3e3e;
+$color02: #fff;
+
+
+/* font-familyの設定
+
+====================================================*/
+$font-ja: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+
+
+
+/* ブレークポイントの設定
+
+====================================================*/
+$layout-width-canvas: 1280px;
+$layout-width-inner: 1200px;
+
+
+/* ブレークポイント
+
+====================================================*/
+$breakpoints: (
+    "sp-down": "(max-width: 490px)",
+    "sp-up": "(max-width: 660px)",
+    "sp": "(min-width: 490px) and (max-width : 767px)",
+    "tab": "(min-width: 767px) and (max-width: 1180px)",
+    "pc": "(min-width: 1180px)",
+
+    "tab-down": "(max-width: #{$layout-width-inner - 1px})",
+    "tab-up": "(min-width: #{$layout-width-inner})",
+    "retina": "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)",
+);

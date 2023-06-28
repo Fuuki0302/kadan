@@ -1,0 +1,80 @@
+
+@use  "../global" as global;
+
+.l-food__main{
+    background: #fff;
+    padding-bottom: 150px;
+
+    @include global.mq('tab') {
+    padding-bottom: 170px;
+    }
+    @include global.mq('sp') {
+    padding-bottom: 170px;
+    }
+    @include global.mq('sp-down') {
+    padding-bottom: 170px;
+    }
+
+}
+
+.l-food__top{
+    background-image: url(../img/menu-header.png);
+    padding-top: 80px;
+    width: 100%;
+    z-index: 98;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+
+}
+
+
+.l-food__top--ttl{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 34px;
+    font-weight: 800;
+    color: #fff;
+    font-family: global.$font-ja;
+
+}
+
+
+.l-food-body_inner{
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.l-food__body--content{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    font-family: global.$font-ja;
+
+}
+
+.l-food{
+    margin: 0 auto;
+
+    @include global.mq('pc') {
+    max-width: 1180px;
+    }
+    @include global.mq('tab') {
+    width: 90%;
+
+    }
+
+}
+
+.l-food__inner{
+    margin: 0 auto;
+    width: 90%;
+
+
+}
