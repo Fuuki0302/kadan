@@ -2,7 +2,7 @@
 
 
 .p-oheya__top{
-    background-image: url(../img/oheya-header.png);
+    background-image: url(../../../../public/assets/img/oheya-header.png);
     padding-top: 80px;
     width: 100%;
     z-index: 98;
@@ -23,6 +23,7 @@
     font-weight: 800;
     color: #fff;
     font-family: global.$font-ja;
+    margin: 0 auto;
 
 }
 
@@ -96,7 +97,7 @@
 }
 
 .p-room__txt--content{
-    background-image: url(../img/bg.png);
+    background-image: url(../../../../public/assets/img/bg.png);
     background-position: center;
     background-size: cover;
     font-weight: 500;
@@ -195,7 +196,7 @@
 
 
 .p-flex__row--content{
-    background-image: url(../img/bg.png);
+    background-image: url(../../../../public/assets/img/bg.png);
     background-position: center;
     background-size: cover;
     font-weight: 500;

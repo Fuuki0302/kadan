@@ -1,7 +1,7 @@
 @use  "../global" as global;
 
 .p-plan{
-    background-image: url(../img/bg02.png);
+    background-image: url(../../../../public/assets/img/bg02.png);
     background-position: center;
     background-size: cover;
     margin-top: 78px;
@@ -53,9 +53,6 @@
 
 }
 
-.p-plan__content {
-
-}
 
 .p-plan__flex{
 @include global.mq('pc') {

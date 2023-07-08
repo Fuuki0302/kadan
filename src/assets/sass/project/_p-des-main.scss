@@ -26,6 +26,7 @@
       width: 90%;
     }
     @include global.mq('sp-down') {
+      display: block;
       padding-top: 50px;
     }
 }
@@ -51,8 +52,8 @@
       font-size: 20px;
     }
     @include global.mq('sp-down') {
-      line-height: 2;
       font-size: 20px;
+      writing-mode: horizontal-tb;
     }
 
 }
@@ -60,10 +61,13 @@
 .p-des__content--ttl{
     & + & {
         padding-top: 85px;
-        @include global.mq('sp-down') {
-          padding-top: 40px;
-        }
-      }
+    }
+
+    @include global.mq('sp-down') {
+      & + & {
+        padding-top: 10px;
+    }
+    }
 
 }
 
@@ -90,6 +94,8 @@
       font-size: 16px;
       line-height: 1.7;
       padding-top: 65px;
+      writing-mode: horizontal-tb;
+      padding-top: 20px;
       
     }
 
@@ -102,5 +108,10 @@
 
 .p-des__txt--action{
     align-self: end;
+
+
+    @include global.mq('sp-down') {
+      text-align: right;
+    }
 }
 
